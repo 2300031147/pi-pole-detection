@@ -1,0 +1,23 @@
+preprocess:
+  blur_kernel: 5
+  canny_low: 50
+  canny_high: 150
+lines:
+  hough_rho: 1
+  hough_theta: 0.01745
+  hough_threshold: 80
+  min_line_length: 40
+  max_line_gap: 10
+  horizontal_angle_deg: 15
+  vertical_angle_deg: 15
+levels:
+  y_cluster_px: 25
+insulators:
+  min_area: 80
+  roundness_threshold: 0.7
+rules:
+  high_voltage_levels: 3
+  mid_voltage_levels: 2
+  high_voltage_label: "33kV"
+  mid_voltage_label: "11kV"
+  low_voltage_label: "LT"
